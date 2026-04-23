@@ -4,10 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cancelar Atendimento</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-  <h2>Cancelar Agendamento</h2>
+  <div class="bg"></div>
+  <div class="container">
+    <img src="assets/logo.webp" alt="Logo Prefeitura" class="logo">
+    <h1>Prefeitura Municipal de Cabo Frio</h1>
+    <h2>Secretaria Municipal de Educação</h2>
+    <p>Atendimento Presencial - Cancelar Agendamento</p>
+ 
 
   <form id="formCancelamento">
     <input
@@ -22,7 +31,9 @@
     <button type="submit">Cancelar</button>
   </form>
 
-  <div id="status" style="display:none;"></div>
+   <div id="status" class="hidden">
+    ✅ Agendamento Cancelado com sucesso!<br>
+  </div>
 
   <script src="script.js"></script>
 </body>
