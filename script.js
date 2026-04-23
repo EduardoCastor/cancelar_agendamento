@@ -1,7 +1,7 @@
 const form = document.getElementById('formCancelamento');
 const statusBox = document.getElementById('status');
 
-const WEBHOOK_URL = 'https://n8n.srv1352561.hstgr.cloud/webhook-test/cancelar';
+const WEBHOOK_URL = 'https://n8n.srv1352561.hstgr.cloud/webhook/cancelar';
 
 // Permitir apenas números
 const protocoloInput = document.getElementById('protocolo');
