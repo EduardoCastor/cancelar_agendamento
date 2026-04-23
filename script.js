@@ -35,6 +35,6 @@ form.addEventListener('submit', async (e) => {
 
   } catch (error) {
     statusBox.style.display = 'block';
-    statusBox.innerHTML = '❌ Erro ao cancelar';
+    statusBox.innerHTML = '❌ O Agendamento já foi cancelado';
   }
 });
