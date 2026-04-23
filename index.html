@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atendimento Presencial</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="bg"></div>
+  <div class="container">
+    <img src="assets/logo.webp" alt="Logo Prefeitura" class="logo">
+    <h1>Prefeitura Municipal de Cabo Frio</h1>
+    <h2>Secretaria Municipal de Educação</h2>
+    <p>Atendimento Presencial - Agendamento</p>
+
+
+  
+  <form id="formAtendimento">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input 
+        type="tel" 
+        name="celular"
+        placeholder="Somente números (ex: 22999999999)"
+        inputmode="numeric"
+        required
+     />
+    <input type="email" name="email" placeholder="Seu e-mail" required>
+ 
+    <label>Assunto/Setor</label>
+    <select name="tipo_atendimento" required>
+      <option value="">Selecione o Assunto/Setor</option>
+      <option>APOSENTADORIA</option>
+      <option>DECLARAÇÕES</option>
+      <option>EXONERAÇÃO/DEMISSÃO/DESVINCULO</option>
+      <option>LICENÇA MÉDICA/READAPTAÇÃO</option>
+      <option>LICENÇA PRÊMIO</option>
+      <option>OUTRAS LICENÇAS E AFASTAMENTOS</option>
+      <option>PERMUTA</option>
+      <option>PROCESSO SELETIVO</option>
+      <option>REMANEJAMENTO</option>
+      <option>VALE TRANSPORTE</option>
+      <option>OUTROS</option>
+    </select>
+
+   <textarea name="assunto" placeholder="Descreva o atendimento" required></textarea>    
+    
+    <!-- NOVO: Data -->
+    <label>Data do Atendimento (Próximo dia útil)</label>
+    <input type="date" id="data" required>
+  
+    <!-- NOVO: Horários -->
+    <label>Horários disponíveis</label>
+    <select id="horarios" required>
+      <option value="">Selecione o horário</option>
+    </select>
+  
+    <button type="submit">Agendar Atendimento</button>
+  </form>
+  
+  <div id="status" class="hidden">
+    ✅ Atendimento agendado com sucesso!<br>
+    Compareça no horário selecionado.
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>    
